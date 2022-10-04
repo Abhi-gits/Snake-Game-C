@@ -1,6 +1,6 @@
 # Snake-Game-C
 
-* The Compiler must be preinstalled. 
+* The Compiler must be pre-installed 
 
 * Run the ***make*** command to compile all the files, and indeed to run the game. 
 
