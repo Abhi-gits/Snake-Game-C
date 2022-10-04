@@ -9,3 +9,10 @@
   ***./snake <snake row> <snake column> <snake size>*** - for giving the input details via the command line.
 
   
+
+
+* This is snake game is has also an unbeatable condition where snake can't cut itself
+
+* For that commands are ->
+    * 1. ***make UNBEATABLE = 1***
+    * 2. ***.\snake 30 40 10*** (make sure that the size of the snake is less than the size of row and column)
