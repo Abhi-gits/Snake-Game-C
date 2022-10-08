@@ -11,8 +11,7 @@ void getSize(const char *filename, int foodcount)
 {
     int r, c, snakeSize = 0, snakeSizee = 0;
 
-    // Node *start = make_node(0, 0, '0', NULL);
-    // struct Node *start = NULL;
+    
     struct Node *start = (struct Node *)malloc(sizeof(struct Node));
     start = NULL;
 
@@ -41,9 +40,9 @@ void getSize(const char *filename, int foodcount)
     int flag = -1;
     while (fscanf(in_file, "%[^\n ] ", file_contents) != EOF)
     {
-        // printf("> %s\n", file_contents);
+        
         char *ll = file_contents;
-        // printf("%s\n", ll);
+        
         if (flag == -1)
         {
             r = atoi(ll);
@@ -68,7 +67,7 @@ void getSize(const char *filename, int foodcount)
             }
             else if (flag % 3 == 0)
             {
-                // printf("%c\n", *ll);
+                
                 snakeicon = *ll;
 
                 flag = flag + 1;
@@ -79,7 +78,7 @@ void getSize(const char *filename, int foodcount)
     }
 
     fclose(in_file);
-    // Closing file
+    
 
     char *TwoDBox[r];
 
@@ -104,21 +103,7 @@ void getSize(const char *filename, int foodcount)
         }
     }
 
-    // TwoDBox[1][1] = '#';
-    // TwoDBox[1][snakeSize] = '>';
-    // snakePosition[0] = 1 * c + 1;
-    // snakePosition[snakeSize - 1] = 1 * c + snakeSize;
-
-    // for (int j = 1; j < snakeSize; j++)
-    // {
-    //     TwoDBox[1][j] = '-';
-    // }
-    // for (int j = 0; j < snakeSize; j++)
-    // {
-    //     snakePosition[j] = 1 * c + j + 1;
-    // }
-
-    // start reading
+    
     FILE *in_filee = fopen(filename, "r");
 
     if (!in_filee)
@@ -139,9 +124,9 @@ void getSize(const char *filename, int foodcount)
     int flagg = -1;
     while (fscanf(in_filee, "%[^\n ] ", file_contentss) != EOF)
     {
-        // printf("> %s\n", file_contents);
+        
         char *ll = file_contentss;
-        // printf("%s\n", ll);
+        
         if (flagg == -1)
         {
             r = atoi(ll);
@@ -166,7 +151,7 @@ void getSize(const char *filename, int foodcount)
             }
             else if (flagg % 3 == 0)
             {
-                // printf("%c\n", *ll);
+                
                 snakeicon = *ll;
 
                 flagg = flagg + 1;
@@ -179,21 +164,7 @@ void getSize(const char *filename, int foodcount)
     }
 
     fclose(in_filee);
-    // End Reading file
-
-    // struct Node *ptr = start;
-    // struct Node *ptr = (struct Node *)malloc(sizeof(struct Node));
-    // ptr = start;
-    // int pp = 0;
-    // while (ptr != NULL)
-    // {
-    //     TwoDBox[ptr->r + 1][ptr->c + 1] = ptr->icon;
-    //     printf("%c", TwoDBox[ptr->r + 1][ptr->c + 1]);
-    //     snakePosition[pp] = (ptr->r + 1) * c + pp;
-    //     ptr = ptr->next;
-    //     pp = pp + 1;
-
-    // }
+    
 
     int rc[] = {r, c};
     srand(time(0));

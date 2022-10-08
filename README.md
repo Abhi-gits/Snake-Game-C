@@ -10,20 +10,19 @@
 
   
 
-
 * This is snake game is has also an unbeatable condition where snake can't cut itself
 
 * For that commands are ->
-    * 1. ***make UNBEATABLE = 1***
-    * 2. ***.\snake 30 40 10*** (make sure that the size of the snake is less than the size of row and column)
+    *  ***make UNBEATABLE = 1***
+    *  ***.\snake 30 40 10*** (make sure that the size of the snake is less than the size of row and column)
 
 
-Rules to play :
-* 1. navigate through ***s*** for ***downward***, ***w*** for ***upward***, ***a*** for ***leftward*** and ***d*** for ***rightward***
-* 2. it will die when it cut itself, except unbeatable situation
-* 3. can't move backward
+# Rules to play :
+*  navigate through ***s*** for ***downward***, ***w*** for ***upward***, ***a*** for ***leftward*** and ***d*** for ***rightward***
+*  it will die when it cut itself, except unbeatable situation
+*  can't move backward
 
 # System Requirement :
-* 1. gcc version c89
-* 2. require make softaware
-* 3. will work only on command from keyboard
+*  gcc version c89
+*  require make softaware
+*  will work only on command from keyboard
