@@ -22,3 +22,8 @@ Rules to play :
 * 1. navigate through ***s*** for ***downward***, ***w*** for ***upward***, ***a*** for ***leftward*** and ***d*** for ***rightward***
 * 2. it will die when it cut itself, except unbeatable situation
 * 3. can't move backward
+
+# System Requirement :
+* 1. gcc version c89
+* 2. require make softaware
+* 3. will work only on command from keyboard
