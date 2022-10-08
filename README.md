@@ -16,3 +16,9 @@
 * For that commands are ->
     * 1. ***make UNBEATABLE = 1***
     * 2. ***.\snake 30 40 10*** (make sure that the size of the snake is less than the size of row and column)
+
+
+Rules to play :
+* 1. navigate through ***s*** for ***downward***, ***w*** for ***upward***, ***a*** for ***leftward*** and ***d*** for ***rightward***
+* 2. it will die when it cut itself, except unbeatable situation
+* 3. can't move backward
