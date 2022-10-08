@@ -1,17 +1,4 @@
-// int iterateSnakePosition(int *snakeSize, int *snakePosition, int check)
-// {
-//     for (int i = 0; i < *snakeSize; i++)
-//     {
-//         if (snakePosition[0] == check)
-//         {
-//             return 1;
-//         }
-//         else
-//         {
-//             return 0;
-//         }
-//     }
-// }
+
 
 void tailRemove(int height, int width, char *border[], int food[], char input, int head[], int tail[], int *snakePosition, int *snakeSize)
 {
@@ -39,10 +26,7 @@ void tailRemove(int height, int width, char *border[], int food[], char input, i
             {
                 border[i][j] = '*';
             }
-            // if (iterateSnakePosition(snakeSize, snakePosition, i * width + j) == 0)
-            // {
-            //     border[i][j] == '0';
-            // }
+            
         }
     }
 }
