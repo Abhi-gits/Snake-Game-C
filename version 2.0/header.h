@@ -1,7 +1,7 @@
 #ifndef MY_HEADER
 #define MY_HEADER
 
-// Node *make_node(int r, int c, char icon, Node *next);
+
 
 struct Node *findNode(int snakerow, int snakecol, char snakeicon, struct Node *start);
 void addSnake(int snakerow, int snakecol, char snakeicon, struct Node *start);

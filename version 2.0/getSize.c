@@ -78,6 +78,7 @@ void getSize(const char *filename, int foodcount)
     }
 
     fclose(in_file);
+    // Closing file
     
 
     char *TwoDBox[r];
@@ -114,6 +115,10 @@ void getSize(const char *filename, int foodcount)
 
     struct stat sbb;
     if (stat(filename, &sbb) == -1)
+        //     snakePosition[j] = 1 * c + j + 1;
+    // }
+
+    // start reading
     {
         perror("stat");
         exit(EXIT_FAILURE);
@@ -164,6 +169,8 @@ void getSize(const char *filename, int foodcount)
     }
 
     fclose(in_filee);
+
+    // End Reading file
     
 
     int rc[] = {r, c};
